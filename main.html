@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIC TAC TOE</title>
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+            body {
+                width: 550px;
+                margin: auto;
+                background: #E8E9EB;
+            }
+
+            h1 {
+                border-bottom: 1px solid black;
+                text-align: center;
+                font-family: 'Noto Sans', sans-serif;
+            }
+            
+            .Square {
+                height: 80px;
+                width: 80px;
+                font-size: 50px;
+                text-align: center;
+                font-family: 'Kanit', sans-serif;
+            }
+            
+            #message {
+                font-size: 18pt;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            #newGame {
+                font-size: 20pt;
+                font-family: 'Acme', sans-serif;
+                text-decoration: none;
+                color: black;
+            }
+            
+        </style>
+    </head>
+
+    <body onload="startGame();">
+        <h1>Tic Tac Toe Mini Games</h1>
+        <div id="message">Messages here</div>
+        <table border = '2' id="tabel">
+            <tr>
+                <td class="Square" id="s1" onclick="nextMove(this)"></td>
+                <td class="Square" id="s2" onclick="nextMove(this)"></td>
+                <td class="Square" id="s3" onclick="nextMove(this)"></td>
+            </tr>
+            <tr>
+                <td class="Square" id="s4" onclick="nextMove(this)"></td>
+                <td class="Square" id="s5" onclick="nextMove(this)"></td>
+                <td class="Square" id="s6" onclick="nextMove(this)"></td>
+            </tr>
+            <tr>
+                <td class="Square" id="s7" onclick="nextMove(this)"></td>
+                <td class="Square" id="s8" onclick="nextMove(this)"></td>
+                <td class="Square" id="s9" onclick="nextMove(this)"></td>
+            </tr>
+        </table>
+        <a href="javascript: startGame();" id="newGame">(Play Again)</a>
+        <script src="main.js"></script>
+    </body>
+</html>
